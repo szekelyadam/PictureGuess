@@ -12,6 +12,9 @@
 		C4839C861C81BE23005BD929 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4839C841C81BE23005BD929 /* Main.storyboard */; };
 		C4839C881C81BE23005BD929 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4839C871C81BE23005BD929 /* Assets.xcassets */; };
 		C4839C8B1C81BE23005BD929 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4839C891C81BE23005BD929 /* LaunchScreen.storyboard */; };
+		C4839C931C81C2F0005BD929 /* GameSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4839C921C81C2F0005BD929 /* GameSelectorViewController.swift */; };
+		C4839C951C81C542005BD929 /* Pictures in Resources */ = {isa = PBXBuildFile; fileRef = C4839C941C81C542005BD929 /* Pictures */; };
+		C4839C971C81C5AD005BD929 /* PictureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4839C961C81C5AD005BD929 /* PictureManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		C4839C871C81BE23005BD929 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4839C8A1C81BE23005BD929 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4839C8C1C81BE23005BD929 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4839C921C81C2F0005BD929 /* GameSelectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSelectorViewController.swift; sourceTree = "<group>"; };
+		C4839C941C81C542005BD929 /* Pictures */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Pictures; path = ../../../Pictures/PictureGuess/Pictures; sourceTree = "<group>"; };
+		C4839C961C81C5AD005BD929 /* PictureManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +60,15 @@
 		C4839C7F1C81BE23005BD929 /* PictureGuess */ = {
 			isa = PBXGroup;
 			children = (
+				C4839C941C81C542005BD929 /* Pictures */,
 				C4839C801C81BE23005BD929 /* AppDelegate.swift */,
 				C4839C821C81BE23005BD929 /* ViewController.swift */,
 				C4839C841C81BE23005BD929 /* Main.storyboard */,
 				C4839C871C81BE23005BD929 /* Assets.xcassets */,
 				C4839C891C81BE23005BD929 /* LaunchScreen.storyboard */,
 				C4839C8C1C81BE23005BD929 /* Info.plist */,
+				C4839C921C81C2F0005BD929 /* GameSelectorViewController.swift */,
+				C4839C961C81C5AD005BD929 /* PictureManager.swift */,
 			);
 			path = PictureGuess;
 			sourceTree = "<group>";
@@ -125,6 +134,7 @@
 				C4839C8B1C81BE23005BD929 /* LaunchScreen.storyboard in Resources */,
 				C4839C881C81BE23005BD929 /* Assets.xcassets in Resources */,
 				C4839C861C81BE23005BD929 /* Main.storyboard in Resources */,
+				C4839C951C81C542005BD929 /* Pictures in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +146,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4839C831C81BE23005BD929 /* ViewController.swift in Sources */,
+				C4839C931C81C2F0005BD929 /* GameSelectorViewController.swift in Sources */,
+				C4839C971C81C5AD005BD929 /* PictureManager.swift in Sources */,
 				C4839C811C81BE23005BD929 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
