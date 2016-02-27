@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>BMW</string>
+		<key>image</key>
+		<string>bmw.jpg</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Citroen</string>
+		<key>image</key>
+		<string>citroen.jpg</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Ferrari</string>
+		<key>image</key>
+		<string>ferrari.jpg</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Mercedes</string>
+		<key>image</key>
+		<string>mercedes.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Reanult</string>
+		<key>image</key>
+		<string>renault.png</string>
+	</dict>
+</array>
+</plist>

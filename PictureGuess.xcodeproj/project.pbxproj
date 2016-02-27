@@ -13,8 +13,14 @@
 		C4839C881C81BE23005BD929 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4839C871C81BE23005BD929 /* Assets.xcassets */; };
 		C4839C8B1C81BE23005BD929 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4839C891C81BE23005BD929 /* LaunchScreen.storyboard */; };
 		C4839C931C81C2F0005BD929 /* GameSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4839C921C81C2F0005BD929 /* GameSelectorViewController.swift */; };
-		C4839C951C81C542005BD929 /* Pictures in Resources */ = {isa = PBXBuildFile; fileRef = C4839C941C81C542005BD929 /* Pictures */; };
 		C4839C971C81C5AD005BD929 /* PictureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4839C961C81C5AD005BD929 /* PictureManager.swift */; };
+		C4839C9B1C81D103005BD929 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4839C9A1C81D103005BD929 /* GameViewController.swift */; };
+		C4839CA71C81DAA1005BD929 /* bmw.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4839CA11C81DAA1005BD929 /* bmw.jpg */; };
+		C4839CA81C81DAA1005BD929 /* citroen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4839CA21C81DAA1005BD929 /* citroen.jpg */; };
+		C4839CA91C81DAA1005BD929 /* ferrari.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4839CA31C81DAA1005BD929 /* ferrari.jpg */; };
+		C4839CAA1C81DAA1005BD929 /* mercedes.png in Resources */ = {isa = PBXBuildFile; fileRef = C4839CA41C81DAA1005BD929 /* mercedes.png */; };
+		C4839CAB1C81DAA1005BD929 /* Pictures.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4839CA51C81DAA1005BD929 /* Pictures.plist */; };
+		C4839CAC1C81DAA1005BD929 /* renault.png in Resources */ = {isa = PBXBuildFile; fileRef = C4839CA61C81DAA1005BD929 /* renault.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +32,14 @@
 		C4839C8A1C81BE23005BD929 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4839C8C1C81BE23005BD929 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4839C921C81C2F0005BD929 /* GameSelectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSelectorViewController.swift; sourceTree = "<group>"; };
-		C4839C941C81C542005BD929 /* Pictures */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Pictures; path = ../../../Pictures/PictureGuess/Pictures; sourceTree = "<group>"; };
 		C4839C961C81C5AD005BD929 /* PictureManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureManager.swift; sourceTree = "<group>"; };
+		C4839C9A1C81D103005BD929 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		C4839CA11C81DAA1005BD929 /* bmw.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bmw.jpg; path = Pictures/bmw.jpg; sourceTree = "<group>"; };
+		C4839CA21C81DAA1005BD929 /* citroen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = citroen.jpg; path = Pictures/citroen.jpg; sourceTree = "<group>"; };
+		C4839CA31C81DAA1005BD929 /* ferrari.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ferrari.jpg; path = Pictures/ferrari.jpg; sourceTree = "<group>"; };
+		C4839CA41C81DAA1005BD929 /* mercedes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mercedes.png; path = Pictures/mercedes.png; sourceTree = "<group>"; };
+		C4839CA51C81DAA1005BD929 /* Pictures.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Pictures.plist; path = Pictures/Pictures.plist; sourceTree = "<group>"; };
+		C4839CA61C81DAA1005BD929 /* renault.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = renault.png; path = Pictures/renault.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +72,7 @@
 		C4839C7F1C81BE23005BD929 /* PictureGuess */ = {
 			isa = PBXGroup;
 			children = (
-				C4839C941C81C542005BD929 /* Pictures */,
+				C4839C9E1C81DA88005BD929 /* Pictures */,
 				C4839C801C81BE23005BD929 /* AppDelegate.swift */,
 				C4839C821C81BE23005BD929 /* ViewController.swift */,
 				C4839C841C81BE23005BD929 /* Main.storyboard */,
@@ -69,8 +81,22 @@
 				C4839C8C1C81BE23005BD929 /* Info.plist */,
 				C4839C921C81C2F0005BD929 /* GameSelectorViewController.swift */,
 				C4839C961C81C5AD005BD929 /* PictureManager.swift */,
+				C4839C9A1C81D103005BD929 /* GameViewController.swift */,
 			);
 			path = PictureGuess;
+			sourceTree = "<group>";
+		};
+		C4839C9E1C81DA88005BD929 /* Pictures */ = {
+			isa = PBXGroup;
+			children = (
+				C4839CA11C81DAA1005BD929 /* bmw.jpg */,
+				C4839CA21C81DAA1005BD929 /* citroen.jpg */,
+				C4839CA31C81DAA1005BD929 /* ferrari.jpg */,
+				C4839CA41C81DAA1005BD929 /* mercedes.png */,
+				C4839CA51C81DAA1005BD929 /* Pictures.plist */,
+				C4839CA61C81DAA1005BD929 /* renault.png */,
+			);
+			name = Pictures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,10 +157,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4839CA71C81DAA1005BD929 /* bmw.jpg in Resources */,
 				C4839C8B1C81BE23005BD929 /* LaunchScreen.storyboard in Resources */,
+				C4839CAA1C81DAA1005BD929 /* mercedes.png in Resources */,
 				C4839C881C81BE23005BD929 /* Assets.xcassets in Resources */,
 				C4839C861C81BE23005BD929 /* Main.storyboard in Resources */,
-				C4839C951C81C542005BD929 /* Pictures in Resources */,
+				C4839CA81C81DAA1005BD929 /* citroen.jpg in Resources */,
+				C4839CA91C81DAA1005BD929 /* ferrari.jpg in Resources */,
+				C4839CAB1C81DAA1005BD929 /* Pictures.plist in Resources */,
+				C4839CAC1C81DAA1005BD929 /* renault.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4839C9B1C81D103005BD929 /* GameViewController.swift in Sources */,
 				C4839C831C81BE23005BD929 /* ViewController.swift in Sources */,
 				C4839C931C81C2F0005BD929 /* GameSelectorViewController.swift in Sources */,
 				C4839C971C81C5AD005BD929 /* PictureManager.swift in Sources */,

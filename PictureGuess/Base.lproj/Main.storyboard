@@ -28,6 +28,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2oe-Dt-EZ0">
                                 <rect key="frame" x="109" y="525" width="102" height="30"/>
                                 <state key="normal" title="Show a picture"/>
+                                <connections>
+                                    <segue destination="exS-Ix-dgr" kind="push" id="8pI-CQ-cBF"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Difficulty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxG-67-r3M">
                                 <rect key="frame" x="125" y="78" width="71" height="21"/>
@@ -46,6 +49,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="908" y="331"/>
+        </scene>
+        <!--What do you see?-->
+        <scene sceneID="DR1-hH-wSI">
+            <objects>
+                <viewController id="exS-Ix-dgr" customClass="GameViewController" customModule="PictureGuess" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="akL-2Z-RjL"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jat-14-vdX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ha7-oE-bch">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EEy-Mp-cNr">
+                                <rect key="frame" x="40" y="72" width="240" height="182"/>
+                            </imageView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVA-tN-u90">
+                                <rect key="frame" x="127" y="277" width="66" height="30"/>
+                                <state key="normal" title="Answer  1"/>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bL-ID-h2i">
+                                <rect key="frame" x="128" y="322" width="64" height="30"/>
+                                <state key="normal" title="Answer 2"/>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9az-QP-5qf">
+                                <rect key="frame" x="128" y="367" width="64" height="30"/>
+                                <state key="normal" title="Answer 3"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="What do you see?" id="hVC-48-dzb"/>
+                    <connections>
+                        <outlet property="pictureView" destination="EEy-Mp-cNr" id="hKy-xM-gxA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WjM-Yy-MmB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1268" y="331"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Rgf-K8-Tnz">
