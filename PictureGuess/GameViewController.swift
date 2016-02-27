@@ -45,9 +45,13 @@ class GameViewController: UIViewController {
             
             if button.tag-1 == correctAnswer {
                 resultsVC.caption = "Great answer 😎 It's a \(button.titleLabel!.text!)"
+                
+                AppDelegate.sharedAppDelegate().pictureManager.correctAnswerCount++
             } else {
                 let correctButton = view.viewWithTag(correctAnswer+1) as? UIButton
                 resultsVC.caption = "You missed it 😞 It's a \(correctButton!.titleLabel!.text!)"
+                
+                AppDelegate.sharedAppDelegate().pictureManager.wrongAnswerCount++
             }
         }
     }

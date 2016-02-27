@@ -11,6 +11,10 @@ import UIKit
 class PictureManager: NSObject {
     let pictures : [AnyObject]
     
+    var picturesQueriedCount = 0
+    var correctAnswerCount = 0
+    var wrongAnswerCount = 0
+    
     override init() {
         let filePath = NSBundle.mainBundle().pathForResource("Pictures", ofType: "plist")
         pictures = NSArray(contentsOfFile: filePath!)! as [AnyObject]
@@ -26,6 +30,8 @@ class PictureManager: NSObject {
     * pictureTitleIndex: index of the chosen picture's title in the titles array
     */
     func getRandomPicture(inout picture:UIImage?, inout titles:[String]?, inout pictureTitleIndex:Int) {
+        picturesQueriedCount++
+        
         // index of the selected picture in the pictures array
         let selectedPictureIndex = Int(arc4random_uniform(UInt32(pictures.count - 1)))
         

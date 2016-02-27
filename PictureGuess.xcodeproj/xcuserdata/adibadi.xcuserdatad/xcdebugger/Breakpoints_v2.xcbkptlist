@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PictureGuess/PictureManager.swift"
-            timestampString = "478269931.485928"
+            timestampString = "478278016.195545"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "getRandomPicture(_:titles:pictureTitleIndex:)"
             landmarkType = "5">
          </BreakpointContent>

@@ -22,6 +22,7 @@
 		C4839CAB1C81DAA1005BD929 /* Pictures.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4839CA51C81DAA1005BD929 /* Pictures.plist */; };
 		C4839CAC1C81DAA1005BD929 /* renault.png in Resources */ = {isa = PBXBuildFile; fileRef = C4839CA61C81DAA1005BD929 /* renault.png */; };
 		C4839CAE1C81DD15005BD929 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4839CAD1C81DD15005BD929 /* ResultsViewController.swift */; };
+		C4839CB01C81EE61005BD929 /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4839CAF1C81EE61005BD929 /* StatsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		C4839CA51C81DAA1005BD929 /* Pictures.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Pictures.plist; path = Pictures/Pictures.plist; sourceTree = "<group>"; };
 		C4839CA61C81DAA1005BD929 /* renault.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = renault.png; path = Pictures/renault.png; sourceTree = "<group>"; };
 		C4839CAD1C81DD15005BD929 /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		C4839CAF1C81EE61005BD929 /* StatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				C4839C961C81C5AD005BD929 /* PictureManager.swift */,
 				C4839C9A1C81D103005BD929 /* GameViewController.swift */,
 				C4839CAD1C81DD15005BD929 /* ResultsViewController.swift */,
+				C4839CAF1C81EE61005BD929 /* StatsViewController.swift */,
 			);
 			path = PictureGuess;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				C4839C831C81BE23005BD929 /* ViewController.swift in Sources */,
 				C4839C931C81C2F0005BD929 /* GameSelectorViewController.swift in Sources */,
 				C4839C971C81C5AD005BD929 /* PictureManager.swift in Sources */,
+				C4839CB01C81EE61005BD929 /* StatsViewController.swift in Sources */,
 				C4839C811C81BE23005BD929 /* AppDelegate.swift in Sources */,
 				C4839CAE1C81DD15005BD929 /* ResultsViewController.swift in Sources */,
 			);
