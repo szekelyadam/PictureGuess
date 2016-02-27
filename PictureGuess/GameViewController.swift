@@ -27,7 +27,7 @@ class GameViewController: UIViewController {
         pictureMgr.getRandomPicture(&baseImage, titles: &titles, pictureTitleIndex: &correctAnswer)
         
         for index in 1...titles!.count {
-            var button = view.viewWithTag(index) as! UIButton
+            let button = view.viewWithTag(index) as! UIButton
             button.setTitle(titles![index - 1], forState: .Normal)
         }
         
