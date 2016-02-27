@@ -15,6 +15,8 @@ class GameViewController: UIViewController {
     var correctAnswer = -1
     var baseImage : UIImage?
     
+    var difficultyFactor : Double = 0.0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,8 +30,6 @@ class GameViewController: UIViewController {
             var button = view.viewWithTag(index) as! UIButton
             button.setTitle(titles![index - 1], forState: .Normal)
         }
-        
-        let difficultyFactor = 1
         
         let cropSize = CGSize(width: 300/difficultyFactor, height: 200/difficultyFactor)
         let cropRect = CGRect(x: CGFloat(random() % Int(baseImage!.size.width - cropSize.width)), y: CGFloat(random() % Int(baseImage!.size.height - cropSize.height)), width: (cropSize.width * baseImage!.scale), height: (cropSize.height * baseImage!.scale))

@@ -26,5 +26,10 @@ class GameSelectorViewController: UIViewController {
     @IBAction func unwindToGameSelector(segue: UIStoryboardSegue) {
         
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let gameVC = segue.destinationViewController as! GameViewController
+        gameVC.difficultyFactor = Double(difficultySegmentedControl.selectedSegmentIndex) + 1.0
+    }
 
 }
