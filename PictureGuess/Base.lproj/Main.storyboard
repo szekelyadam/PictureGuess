@@ -66,16 +66,25 @@
                                 <rect key="frame" x="40" y="72" width="240" height="182"/>
                             </imageView>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVA-tN-u90">
-                                <rect key="frame" x="127" y="277" width="66" height="30"/>
+                                <rect key="frame" x="40" y="277" width="240" height="30"/>
                                 <state key="normal" title="Answer  1"/>
+                                <connections>
+                                    <segue destination="Vjh-zC-WV5" kind="modal" id="akT-JM-SBu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bL-ID-h2i">
-                                <rect key="frame" x="128" y="322" width="64" height="30"/>
+                                <rect key="frame" x="40" y="322" width="240" height="30"/>
                                 <state key="normal" title="Answer 2"/>
+                                <connections>
+                                    <segue destination="Vjh-zC-WV5" kind="modal" id="xGy-Ru-sW2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9az-QP-5qf">
-                                <rect key="frame" x="128" y="367" width="64" height="30"/>
+                                <rect key="frame" x="40" y="367" width="240" height="30"/>
                                 <state key="normal" title="Answer 3"/>
+                                <connections>
+                                    <segue destination="Vjh-zC-WV5" kind="modal" id="Kae-bj-ynG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -87,7 +96,48 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WjM-Yy-MmB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1268" y="331"/>
+            <point key="canvasLocation" x="1336" y="331"/>
+        </scene>
+        <!--Results View Controller-->
+        <scene sceneID="Ckv-ye-YGr">
+            <objects>
+                <viewController id="Vjh-zC-WV5" customClass="ResultsViewController" customModule="PictureGuess" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="46O-Hr-7Wc"/>
+                        <viewControllerLayoutGuide type="bottom" id="sSv-H5-VKZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="i2J-pm-Wkt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XHh-xJ-GCg">
+                                <rect key="frame" x="40" y="64" width="240" height="182"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZd-D3-VAZ">
+                                <rect key="frame" x="145" y="276" width="30" height="30"/>
+                                <state key="normal" title="OK"/>
+                                <connections>
+                                    <segue destination="oBx-9g-ZJz" kind="unwind" unwindAction="unwindToGameSelector:" id="yNI-Vw-2Iy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fN0-X0-3ap">
+                                <rect key="frame" x="40" y="35" width="240" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="pictureView" destination="XHh-xJ-GCg" id="bxI-EX-jlf"/>
+                        <outlet property="resultsLabel" destination="fN0-X0-3ap" id="xJK-AH-HaJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lqz-tM-ikE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="oBx-9g-ZJz" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1733" y="331"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Rgf-K8-Tnz">
@@ -106,4 +156,7 @@
             <point key="canvasLocation" x="463" y="331"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="xGy-Ru-sW2"/>
+    </inferredMetricsTieBreakers>
 </document>

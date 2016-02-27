@@ -37,6 +37,20 @@ class GameViewController: UIViewController {
         let croppedImage = UIImage(CGImage: croppedImageRef!, scale: baseImage!.scale, orientation: baseImage!.imageOrientation)
         pictureView.image = croppedImage
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let button = sender as? UIButton {
+            let resultsVC : ResultsViewController = segue.destinationViewController as! ResultsViewController
+            resultsVC.picture = baseImage
+            
+            if button.tag-1 == correctAnswer {
+                resultsVC.caption = "Great answer 😎 It's a \(button.titleLabel!.text!)"
+            } else {
+                let correctButton = view.viewWithTag(correctAnswer+1) as? UIButton
+                resultsVC.caption = "You missed it 😞 It's a \(correctButton!.titleLabel!.text!)"
+            }
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
